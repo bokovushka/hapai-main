@@ -6369,6 +6369,10 @@ textarea {
 //video plyr
 .plyr--video {
 	height: 100%;
+	.plyr__video-wrapper {
+		//safari video poster work
+		z-index: 0;
+	}
 	&.plyr--paused {
 		opacity: 1;
 		cursor: pointer;
@@ -6404,7 +6408,7 @@ textarea {
 		}
 	}
 	.plyr__poster {
-		background-size: cover;
+		background-size: 105%;
 	}
 	video {
 		object-fit: cover;

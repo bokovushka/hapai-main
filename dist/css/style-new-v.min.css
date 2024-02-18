@@ -6585,6 +6585,9 @@ textarea::placeholder {
 .plyr--video {
   height: 100%;
 }
+.plyr--video .plyr__video-wrapper {
+  z-index: 0;
+}
 .plyr--video.plyr--paused {
   opacity: 1;
   cursor: pointer;
@@ -6620,7 +6623,7 @@ textarea::placeholder {
   stroke-linejoin: round;
 }
 .plyr--video .plyr__poster {
-  background-size: cover;
+  background-size: 105%;
 }
 .plyr--video video {
   object-fit: cover;
