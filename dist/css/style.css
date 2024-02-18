@@ -5285,6 +5285,7 @@ input.field {
 
 .checkbox__txt {
   color: #777;
+  text-align: left;
 }
 
 .register .checkbox__txt {
