@@ -586,3 +586,24 @@ const players = Plyr.setup('.js-player',
 		iconUrl: 'img/svg/plyr.svg',
 	}
 );
+
+
+// radio button form field
+$(document).ready(function () {
+	// Для кожної форми
+	$('.form-check-auto-ria').each(function () {
+		var $form = $(this);
+
+		// При зміні стану checkbox в межах форми
+		$form.find('input[type=radio]').change(function () {
+			// Якщо checkbox з класом "ui-checkboxradio-checked" вибраний в межах цієї форми
+			if ($(this).closest('.checkbox-check-autoria').find('label').hasClass('ui-checkboxradio-checked')) {
+				// Додати клас "active" до відповідного елементу з класом "field-check-autoria" в межах цієї форми
+				$form.find('.field-check-autoria').addClass('active');
+			} else {
+				// В іншому випадку, видалити клас "active" з відповідного елементу в межах цієї форми
+				$form.find('.field-check-autoria').removeClass('active');
+			}
+		});
+	});
+});

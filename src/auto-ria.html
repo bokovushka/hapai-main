@@ -864,17 +864,19 @@
 							</div>
 							<form id="form-check-auto-ria" class="form-check-auto-ria">
 								<div class="user-info">
-									<div class="checkbox checkbox-2">
-										<label for="agree-terms-auto-ria"></label>
-										<input type="checkbox" name="agree-terms-auto-ria" id="agree-terms-auto-ria">
-										<span class="checkbox__txt">Дізнатися умови, розрахувати платіж або замовити автопідбір</span>
-									</div>
-									<div class="checkbox checkbox-2">
-										<label for="search-auto-ria-link"></label>
-										<input type="checkbox" name="search-auto-ria-link" id="search-auto-ria-link">
-										<span class="checkbox__txt">Знайшов авто на авторіа? Супер, залиш лінк <a href="##">тут</a></span>
-									</div>
-									<div class="user-txt">
+									<fieldset id="form-check-auto-ria__group-radio">
+										<div class="checkbox checkbox-2">
+											<label for="agree-terms-auto-ria"></label>
+											<input type="radio" name="form-check-auto-ria__group-radio" id="agree-terms-auto-ria">
+											<span class="checkbox__txt">Дізнатися умови, розрахувати платіж або замовити автопідбір</span>
+										</div>
+										<div class="checkbox checkbox-2 checkbox-check-autoria">
+											<label for="search-auto-ria-link"></label>
+											<input type="radio" name="form-check-auto-ria__group-radio" id="search-auto-ria-link">
+											<span class="checkbox__txt">Знайшов авто на авторіа? Супер, залиш лінк <a href="##">тут</a></span>
+										</div>
+									</fieldset>
+									<div class="user-txt field-check-autoria">
 										<input type="text" name="auto-ria-link" placeholder="Посилання на авто в AUTORIA">
 										<p class="help-block help-block-error">Обов'язкове поле.</p>
 									</div>
@@ -891,7 +893,8 @@
 										<input type="checkbox" checked name="auto-ria-checkbox-agree" id="auto-ria-checkbox-agree">
 										<span class="checkbox__txt">Даю згоду на збір, обробку, зберігання та використання своїх <a href="##">персональних даних</a>.</span>
 									</div>
-									<button type="submit" class="btn btn-style-1">Відправити заявку</button>
+									<!-- <button type="submit" class="btn btn-style-1">Відправити заявку</button> -->
+									<a href="#popup-check-auto-ria" class="btn btn-style-1 popup-link">Відправити заявку</a>
 								</div>
 							</form>
 						</div>
@@ -909,6 +912,7 @@
 	@@include('html/popup/popup-login.html',{})
 	@@include('html/popup/popup-auth.html',{})
 	@@include('html/popup/popup-installment.html',{})
+	@@include('html/popup/popup-check-auto-ria.html',{})
 
 	@@include('html/part-footer-js.html',{})
 </body>

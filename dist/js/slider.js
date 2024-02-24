@@ -265,14 +265,18 @@ var SwiperWallpaperCollection = new Swiper(".loan-leasing .loan__swiper", {
 			slidesPerView: 1.15,
 		}
 	},
-	thumbs: {
-		swiper: SwiperWallpaperCollectionThumbs,
-	},
+	// thumbs: {
+	// 	swiper: SwiperWallpaperCollectionThumbs,
+	// },
 	navigation: {
 		prevEl: ".loan-leasing .leasing-swiper__buttons .icon-u_arrow-left",
 		nextEl: ".loan-leasing .leasing-swiper__buttons .icon-u_arrow-right"
 	},
 })
+
+//передача контролю управління SwiperWallpaperCollection & SwiperWallpaperCollectionThumbs
+SwiperWallpaperCollection.controller.control = SwiperWallpaperCollectionThumbs;
+SwiperWallpaperCollectionThumbs.controller.control = SwiperWallpaperCollection;
 
 //feedback swiper
 new Swiper(".feedback__swiper", {
