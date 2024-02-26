@@ -7107,6 +7107,9 @@ textarea::placeholder {
 .form-check-auto-ria input::placeholder {
   color: #777777;
 }
-.form-check-auto-ria .field-check-autoria.active {
+.form-check-auto-ria .field-check-autoria {
   display: none;
+}
+.form-check-auto-ria .field-check-autoria.active {
+  display: block;
 }
