@@ -5859,11 +5859,12 @@ textarea {
 				}
 			}
 			.illustration-descrp__text {
-				font-size: 24px;
-				line-height: 29px;
+				font-size: 20px;
+				line-height: 24px;
 				padding: 23px 20px 5px 20px;
 				@media only screen and (max-width: 1279px) {
-					font-size: 20px;
+					font-size: 16px;
+					line-height: 20px;
 				}
 				@media only screen and (max-width: 639px) {
 					padding: 20px 0 5px 0;
@@ -5953,7 +5954,7 @@ textarea {
 			background-size: cover;
 		}
 		.banner-auto-ria__info {
-			width: calc(100% - 605px);
+			width: calc(100% - 565px);
 			position: relative;
 			z-index: 2;
 			@media only screen and (max-width: 1279px) {
