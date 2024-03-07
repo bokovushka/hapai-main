@@ -6671,6 +6671,7 @@ textarea {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			align-items: end;
 			@media only screen and (max-width: 992px) {
 				width: 100%;
 				margin-bottom: 25px;
@@ -6678,12 +6679,12 @@ textarea {
 				text-align: start;
 				align-items: center;
 			}
-			.banner-logo {
-				width: 139px;
+			.banner-emoji {
+				width: 220px;
 				height: auto;
-				margin-bottom: 85px;
+				margin-right: 100px;
 				@media only screen and (max-width: 1279px) {
-					margin-bottom: 35px;
+					margin-right: 50px;
 				}
 				@media only screen and (max-width: 992px) {
 					display: none;
@@ -6691,8 +6692,8 @@ textarea {
 			}
 			.title {
 				font-weight: 500;
-				font-size: 56px;
-				line-height: 64px;
+				font-size: 60px;
+				line-height: 80px;
 				display: flex;
 				flex-direction: column;
 				@media only screen and (max-width: 1279px) {
