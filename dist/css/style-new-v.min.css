@@ -6572,6 +6572,11 @@ textarea::placeholder {
   overflow: hidden;
   margin-bottom: 15px;
 }
+@media only screen and (max-width: 992px) {
+  .selection-car-card .selection-car-card__info .img-wrap {
+    height: 250px;
+  }
+}
 .selection-car-card .selection-car-card__info .img-wrap img {
   object-fit: cover;
   object-position: center;
