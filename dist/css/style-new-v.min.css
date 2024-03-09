@@ -6534,9 +6534,19 @@ textarea::placeholder {
   line-height: 24px;
   padding: 16px 22px;
 }
+@media only screen and (max-width: 991px) {
+  .auto-ria-team .auto-ria-team__swiper-wrap .auto-ria-team__swiper .auto-ria-team__worker .auto-ria-team__descrp {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 @media only screen and (max-width: 639px) {
   .auto-ria-team .auto-ria-team__swiper-wrap .auto-ria-team__swiper .auto-ria-team__worker .auto-ria-team__descrp {
-    display: none;
+    width: calc(100% - 24px);
+    right: unset;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

@@ -6313,8 +6313,16 @@ textarea {
 					font-weight: 400;
 					line-height: 24px;
 					padding: 16px 22px;
+					@media only screen and (max-width: 991px) {
+						font-size: 16px;
+						line-height: 22px;
+					}
 					@media only screen and (max-width: 639px) {
-						display: none;
+						width: calc(100% - 24px);
+						right: unset;
+						bottom: 16px;
+						left: 50%;
+						transform: translateX(-50%);
 					}
 				}
 			}
